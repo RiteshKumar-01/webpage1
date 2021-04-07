@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.max-width{
+
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 999;
+    background: black;
+    font-family: 'Ubuntu' , sans-serif;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+
+    color: rgb(248, 246, 246);
+    font-size: 40px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: crimson;
+}
+a{
+    text-decoration: none;
+}
+.navbar .menu li {
+
+    display: inline-block;
+}
+.navbar .menu li a{
+
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.home{
+
+    display: flex;
+    background-image: url("hacking-290356.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu' , sans-serif;
+      
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin-left: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 25px;
+    padding: 10px 33px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border : 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+
+
+
+.about{
+    font-family: 'Poppins' , sans-serif;
+    padding:  80px;
+
+}
+.about .title{
+
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu' , sans-serif;
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "who I am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    transform: translateX(-50%);
+
+}
+
+.about .about-content .column-left img{
+    height: 420px;
+    width: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .column-left{
+    width: 45%;
+}
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.about .about-content .column-right{
+    width: 55%;
+}
+.about .about-content .column-right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .column-right .text span{
+    color: crimson;
+}
+
+.about .about-content .column-right p{
+    text-align: justify;
+}
+
+.about .about-content .column-right a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border : 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .column-right a:hover{
+    color: crimson;
+    background: none;
+}
+
+
+
+.skills{
+    font-family: 'Poppins' , sans-serif;
+
+}
+.skills .title1{
+
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu' , sans-serif;
+}
+
+.skills .title1::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+.skills .title1::after{
+    content: "what I know";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    transform: translateX(-50%);
+
+}
+.skills .skills-content .left .text{
+
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    padding: 7px 14px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border : 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+.skills .skills-content .right {
+
+     padding: 30px ;
+     margin-left: 180px;
+     width: 700px;
+     height: 600px;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top :0;
+    background: crimson;
+}
+
+.skills-content .right .C::before{
+    width:60%;
+}
+.skills-content .right .DS::before{
+    width:40% ;
+}
+.skills-content .right .Cpp::before{
+    width:50%;
+}
+.skills-content .right .HTML::before{
+    width: 80%;
+}
+.skills-content .right .CSS::before{
+    width: 40% ;
+}
+.skills-content .right .Js::before{
+    width: 20%;
+}
+
+
+
+.gallery{
+
+    font-family: 'Poppins' , sans-serif;
+}
+.gallery .title2{
+
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu' , sans-serif;
+}
+
+.gallery .title2::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+.gallery .title2::after{
+    content: "what I have";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 18px;
+    color: crimson;
+    padding: 5px;
+    transform: translateX(-50%);
+
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.container{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.image{
+
+    height: 280px;
+    width: 400px;
+}
+
+.container img {
+
+    padding: 15px;
+    filter: grayscale(0.8);
+    transition:  0.6s;
+}
+
+.container img:hover {
+
+    filter: grayscale(0);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.achievement{
+
+    font-family: 'Poppins' , sans-serif;
+    margin-top: 150px;
+}
+.achievement .title3{
+
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu' , sans-serif;
+}
+
+.achievement .title3::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+.achievement .title3::after{
+    content: "what I earn";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 18px;
+    color: crimson;
+    padding: 5px;
+    transform: translateX(-50%);
+
+}
+
+
+.area1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left1 img {
+
+    margin-top: 50px;
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.right1 p{
+
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    text-align: justify;
+    margin-right: 20px;
+
+}
+
+.achievement .area1 .right1 a{
+    display: inline-block;
+    margin-left: 80px;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    padding: 7px 14px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border : 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.achievement .area1 .right1 a:hover{
+    color: crimson;
+    background: none;
+}
+
+.area2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left2 {
+    width: 500px;
+}
+.left2 p{
+
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.right2 img {
+
+    margin-top: 30px;
+    height: 450px;
+    width: 480px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 50px;
+}
+
+.achievement .area2 .left2 a{
+    display: inline-block;
+    margin-left: 22px;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    padding: 7px 14px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border : 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.achievement .area2 .left2 a:hover{
+    color: crimson;
+    background: none;
+}
+.area3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right3 {
+    width: 50%;
+}
+.right3 p{
+
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.left3 img {
+
+    margin-top: 30px;
+    height: 450px;
+    width: 480px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 50px;
+}
+
+.achievement .area3 .right3 a{
+    display: inline-block;
+    margin-left: 22px;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    padding: 7px 14px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border : 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.achievement .area3 .right3 a:hover{
+    color: crimson;
+    background: none;
+}
+
+
+
+
+.contact{
+
+    font-family: 'Poppins' , sans-serif;
+    margin-top: 150px;
+}
+.contact .title4{
+
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu' , sans-serif;
+}
+
+.contact .title4::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+.contact .title4::after{
+    content: "get in touch";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 18px;
+    color: crimson;
+    padding: 5px;
+    transform: translateX(-50%);
+
+}
+
+.contact .contact-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact .contact-content .column-left1 {
+    width: calc(50% - 30px);
+}
+.contact .contact-content .column-left1 .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .column-left1 p{
+    text-align: justify;
+}
+.contact .contact-content .column-left1 .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: crimson;
+    font-weight: 500;
+}
+.contact .contact-content .column1-right .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .column1-right form .fields{
+    display: flex;
+}
+
+.contact .column1-right form .field-name{
+    margin-right: 10px;
+}
+.contact .column1-right form .fields input{
+
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins' , sans-serif;
+
+}
+.contact .column1-right form input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins' , sans-serif;
+}
+.contact .column1-right form .field {
+    margin-top: 10px;
+}
+.contact .column1-right form .field-textarea {
+    margin-top: 10px;
+   
+}
+.contact .column1-right form .field-textarea textarea{
+    height: 80px;
+    width: 350px;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 15px;
+    font-family: 'Poppins' , sans-serif;
+}
+.contact .column1-right form .button button
+{
+    width: 27%;
+    height: 100%;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    border : 2px solid crimson;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .column1-right form .button button:hover{
+    color: crimson;
+    background: none;
+}
+
